@@ -1,0 +1,6 @@
+@Inv_back_HostAddress = http://localhost:5230
+
+GET {{Inv_back_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
