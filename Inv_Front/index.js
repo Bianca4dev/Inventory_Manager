@@ -10,7 +10,7 @@ async function fetchItems() {
 
     items.forEach(item => {
         const li = document.createElement('li');
-        li.textContent = `${item.id} - Quantity: ${item.quantity} - Price: R${item.price.toFixed(2)}`;
+        li.textContent = `${item.name} | Quantity: ${item.quantity} | Price: R${item.price.toFixed(2)}`;
         itemsList.appendChild(li);
 
         // Add delete button for each item
@@ -25,7 +25,9 @@ async function addItem() {
     const name = document.getElementById("item-name").value;
     const quantity = document.getElementById("item-quantity").value;
     const price = document.getElementById("item-price").value;
+    console.log(name);
     const item = { name, quantity: parseInt(quantity), price: parseFloat(price) };
+   console.log(item);
 
     // Send POST request to add new item
     const response = await fetch(apiUrl, {
