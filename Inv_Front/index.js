@@ -66,9 +66,9 @@ toggleBtn.addEventListener('click', () => {
     sidebar.classList.toggle('open'); // This will toggle the 'open' class correctly
     // Adjust button icon based on sidebar state
     if (sidebar.classList.contains('open')) {
-        toggleBtn.innerHTML = '<i class="fa-solid fa-chevron-left"></i>';
+        toggleBtn.innerHTML = '<i class="opened"></i>';
     } else {
-        toggleBtn.innerHTML = '<i class="fa-solid fa-chevron-right"></i>';
+        toggleBtn.innerHTML = '<i class="closed"></i>';
     }
 });
 

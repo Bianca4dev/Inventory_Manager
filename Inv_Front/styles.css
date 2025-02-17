@@ -6,21 +6,23 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #2c2c36;
-    color: white;
+    background-color: #524b71;
+    color: #BEBBBB;
     display: flex;
     justify-content: flex-start;
     align-items: center; /* Center the content vertically */
     min-height: 100vh;
     flex-direction: row;
 }
-
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
+}
 .container {
     display: flex;
     align-items: flex-start;
     width: 100%;
     height: auto;
-    background-color: #072653;
+    background-color: #2F243A;
     border-radius: 10px;
 }
 
@@ -34,7 +36,7 @@ body {
     top:0;
     width: 60px;
     height: 100vh;
-    background-color: #2c3e50;
+    background-color: #2F243A;
     transition: width 0.3s ease;
     overflow: hidden;
     border-radius: 10px;
@@ -49,7 +51,7 @@ body {
     display: flex;
     align-items: center;
     padding: 20px 0;
-    color: white;
+    color: #BEBBBB;
     transition: padding 0.3s ease;
     width: 100%;
 }
@@ -80,13 +82,13 @@ body {
     display: flex;
     align-items: center;
     padding: 15px;
-    color: white;
+    color: #BEBBBB;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 .sidebar ul li:hover {
-    background-color: #34495e;
+    background-color: #2F243A;
 }
 
 .sidebar .indicator {
@@ -94,17 +96,17 @@ body {
     left: 15px;
     width: 4px;
     height: 60px;
-    background-color: #0d6efd;
+    background-color: #2F243A;
 }
 
 .toggle-btn {
     position: absolute;
     top: 10px;
-    left: 10px;
+    left:45px;
     width: 30px;
     height: 30px;
-    background-color: #0d6efd;
-    color: white;
+    background-color: #9B9ECE;
+    color: #BEBBBB;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -113,7 +115,7 @@ body {
 }
 
 .toggle-btn:hover {
-    background-color: #0950ba;
+    background-color: #6665DD;
 }
 
 .content {
@@ -143,21 +145,22 @@ body {
     width: 200px;
     border-radius: 5px;
     border: none;
-    background-color: #34495e;
-    color: white;
+    background-color: #D4B8A7;
+    color: #FAC9B8;
 }
 
 #item-form button {
+    margin-left:50px;
     padding: 10px 20px;
-    background-color: #0d6efd;
+    background-color: #DB8A74;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: #392c46;
     cursor: pointer;
 }
 
 #item-form button:hover {
-    background-color: #0950ba;
+    background-color: #d67a60;
 }
 
 h2 {
@@ -172,15 +175,16 @@ ul#items-list {
 
 ul#items-list li {
     width:1000px;
-    background-color: #34495e;
+    background-color: #423b56;
+    
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
 }
 
 ul#items-list li button {
-    background-color: red;
-    color: white;
+    background-color: #db8a74;
+    color: #3c2e4a;
     margin-left:650px;
     border: none;
     padding: 5px 10px;
@@ -189,7 +193,7 @@ ul#items-list li button {
 }
 
 ul#items-list li button:hover {
-    background-color: #c0392b;
+    background-color: #d37055;
 }
 
 /* Hide text when sidebar is collapsed */
